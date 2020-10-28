@@ -12,7 +12,17 @@ public class Client {
 		User user = createUser();
 		// Client has to provide director with concrete builder
 		UserDTO dto = directBuild(UserDTO.getBuilder(), user);
+
+		//called directly (change the parameters as required); note the with_() methods are not all mandatory
+		UserDTO userDTO_2 = new UserDTOBuilder()
+				.withFirstName(user.getFirstName())
+				.withLastName(user.getLastName())
+				.withBirthday(user.getBirthday())
+				.withAddress(user.getAddress()).build();
+
 		System.out.println(dto);
+		System.out.println("==============================");
+		System.out.println(userDTO_2);
 	}
 
 	/**

@@ -83,10 +83,12 @@ public class UserDTO {
 			return this;
 		}
 
-		//use the private setters of the outer class and return an object of its type
+		// use the private setters of the outer class and return an object of its type (this means one can build
+		// an immutable object within the class; external classes cannot access private setters; the policies of the
+		// builder are also easier to locate)
 		public UserDTO build() {
 			this.userDTO = new UserDTO();
-			userDTO.setName(firstName+" " + lastName);
+			userDTO.setName(firstName+ " " + lastName);
 			userDTO.setAddress(address);
 			userDTO.setAge(age);
 			return this.userDTO;
