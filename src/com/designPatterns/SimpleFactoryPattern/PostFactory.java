@@ -8,6 +8,7 @@ package com.designPatterns.SimpleFactoryPattern;
 public class PostFactory {
 
 	//note that other Builder patterns may be implemented here if required
+	//also note that PasoFactory is aware of which types to return; compare this to FactoryMethodPattern
 	public static Post createPost(String type) {
 		switch(type) {
 		case "blog":
