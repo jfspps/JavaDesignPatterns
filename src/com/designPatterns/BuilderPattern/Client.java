@@ -23,7 +23,7 @@ public class Client {
 	}
 
 	/**
-	 * Returns a sample user. 
+	 * Returns a sample user. Simulates a DB datasource
 	 */
 	public static User createUser() {
 		User user = new User();

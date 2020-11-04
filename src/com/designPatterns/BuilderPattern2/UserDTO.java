@@ -5,7 +5,7 @@ import com.designPatterns.BuilderPattern.Address;
 import java.time.LocalDate;
 import java.time.Period;
 
-//Product class
+//Product class (DTO - data transfer object)
 public class UserDTO {
 
 	private String name;
@@ -48,7 +48,7 @@ public class UserDTO {
 		return new UserDTOBuilder();
 	}
 
-	//Builder (declared within the class that it builds objects of)
+	//Builder (declared within the class that it builds objects of) ==============================================
 	public static class UserDTOBuilder {
 		
 		private String firstName;
@@ -59,9 +59,9 @@ public class UserDTO {
 		
 		private String address;
 		
-		private UserDTO userDTO;
+		private UserDTO userDTO;		// link between the Builder and the object it builds (UserDTO)
 
-		//chain methods
+		//chain methods (note how they return the UserDTOBuilder object; this permits chaining)
 		public UserDTOBuilder withFirstName(String fname) {
 			this.firstName = fname;
 			return this;
@@ -88,7 +88,7 @@ public class UserDTO {
 		// builder are also easier to locate)
 		public UserDTO build() {
 			this.userDTO = new UserDTO();
-			userDTO.setName(firstName+ " " + lastName);
+			userDTO.setName(firstName + " " + lastName);
 			userDTO.setAddress(address);
 			userDTO.setAge(age);
 			return this.userDTO;

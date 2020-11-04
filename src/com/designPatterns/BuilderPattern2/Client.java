@@ -10,7 +10,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		User user = createUser();
-		// Client has to provide director with concrete builder
+		// Client has to provide director with concrete builder (DTO - data transfer object)
 		UserDTO dto = directBuild(UserDTO.getBuilder(), user);
 
 		//called directly (change the parameters as required); note the with_() methods are not all mandatory
@@ -34,7 +34,7 @@ public class Client {
 	}
 
 	/**
-	 * Returns a sample user.
+	 * Returns a sample user. Simulates a DB datasource
 	 */
 	public static User createUser() {
 		User user = new User();
