@@ -7,3 +7,4 @@ For future reference, all `main()` functions are defined in a `Client` class, wh
 + ![The Builder Pattern](/docs/BuilderPattern.md)
 + ![The Simple Factory Pattern](/docs/SimpleFactoryPattern.md)
 + ![The Factory Method Pattern](/docs/FactoryMethodPattern.md)
++ ![The Prototype Pattern](/docs/PrototypePattern.md)
