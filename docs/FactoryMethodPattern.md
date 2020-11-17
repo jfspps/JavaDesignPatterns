@@ -11,3 +11,5 @@ The example provided shows how a text message object and JSON message object is 
 One example of a factory method pattern method is the `Iterator()` abstract method from `java.util.Collection`. This method returns an iterator over the elements contained in a given collection, the classes which implement the abstract Iterator class manage the specific object iterators. Static methods which return objects (and are therefore not abstract) do not require subclasses to define the specific object properties and are therefore not considered by some as factory methods.
 
 Given the intertwined nature of the factory class and its creator classes, the factory method pattern is sometimes more challenging to implement. Older code bases which require a factory method pattern have to essentially be written from scratch. In many cases, one must subclass at least once just to get the design pattern to work. For each new object type needed, a new creator class must also be built.
+
+Normally, one would build one instance of the concrete factory (a singleton) to build different groups, as is observed in other contexts of manufacture.
