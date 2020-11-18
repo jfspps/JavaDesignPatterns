@@ -14,7 +14,7 @@ Each set (or era in this case) has its own factory class (e.g. `MedievalUnitFact
 
 The pattern is referred to as an Abstract Factory Method because it borrows the same principles as the Factory method. 
 
-The code example of abstract factory method is based on the creation of cloud services, with Amazon AWS EC2 (or Google Compute) and Amazon AWS S3 (or Google Cloud) as instances and data storage containers. Other sets of objects which work closely can also be candidates for the abstract factory method.
+The code example of abstract factory method is based on the creation of cloud services, with [Amazon AWS EC2](/src/com/designPatterns/AbstractFactoryPattern/aws/Ec2Instance.java) (or [Google Compute](/src/com/designPatterns/AbstractFactoryPattern/gcp/GoogleComputeEngineInstance.java)) and [Amazon AWS S3](/src/com/designPatterns/AbstractFactoryPattern/aws/S3Storage.java) (or [Google Cloud](/src/com/designPatterns/AbstractFactoryPattern/gcp/GoogleCloudStorage.java)) as [instances](/src/com/designPatterns/AbstractFactoryPattern/Instance.java) and [data storage](/src/com/designPatterns/AbstractFactoryPattern/Storage.java) services. Other sets of objects which work closely can also be candidates for the abstract factory method. Both [AWS](/src/com/designPatterns/AbstractFactoryPattern/aws/AwsResourceFactory.java) and [Google](/src/com/designPatterns/AbstractFactoryPattern/gcp/GoogleResourceFactory.java) packages implement their own [Factory class](/src/com/designPatterns/AbstractFactoryPattern/ResourceFactory.java).
 
 A reasonably good example of the abstract factory pattern in use is the DocumentBuilderFactory class from `javax.xml.parsers`.
 
