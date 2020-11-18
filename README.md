@@ -17,3 +17,4 @@ For future reference, all `main()` functions are defined in a `Client` class, wh
 + [The Factory Method Pattern](/docs/FactoryMethodPattern.md)
 + [The Prototype Pattern](/docs/PrototypePattern.md)
 + [The Abstract Factory Pattern](/docs/AbstractFactoryPattern.md)
++ [The Singleton Pattern](/docs/SingletonPattern.md)
