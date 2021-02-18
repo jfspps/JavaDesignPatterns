@@ -1,5 +1,7 @@
 # Design Patterns with Java #
 
+A GitHub Pages landing page can be found [here](https://jfspps.github.io/JavaDesignPatterns)
+
 SOLID design principles:
 
 + __Single responsibility__ means that the class or method is responsible for one aspect only. Any changes to external objects may change a class (through composition) which adheres to the single responsibility principle but only one change is possible.
