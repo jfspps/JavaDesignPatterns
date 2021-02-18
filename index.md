@@ -12,9 +12,9 @@ For future reference, all `main()` functions are defined in a `Client` class, wh
 
 # Creational Design Patterns #
 
-+ [The Builder Pattern](/docs/BuilderPattern.md)
-+ [The Simple Factory Pattern](/docs/SimpleFactoryPattern.md)
-+ [The Factory Method Pattern](/docs/FactoryMethodPattern.md)
-+ [The Prototype Pattern](/docs/PrototypePattern.md)
-+ [The Abstract Factory Pattern](/docs/AbstractFactoryPattern.md)
-+ [The Singleton Pattern](/docs/SingletonPattern.md)
++ [The Builder Pattern](BuilderPattern.md)
++ [The Simple Factory Pattern](SimpleFactoryPattern.md)
++ [The Factory Method Pattern](FactoryMethodPattern.md)
++ [The Prototype Pattern](PrototypePattern.md)
++ [The Abstract Factory Pattern](AbstractFactoryPattern.md)
++ [The Singleton Pattern](SingletonPattern.md)
