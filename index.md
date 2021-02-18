@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Design Patterns with Java #
 
-You can use the [editor on GitHub](https://github.com/jfspps/JavaDesignPatterns/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+SOLID design principles:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
++ __Single responsibility__ means that the class or method is responsible for one aspect only. Any changes to external objects may change a class (through composition) which adheres to the single responsibility principle but only one change is possible.
++ __Open-closed__: Open means that classes are open for inheritance, with overridable methods. Closed means the existing base classes should not be modified. Quite often such classes are composed of abstract methods which cannot be changed in the class but are defined in child classes.
++ The __Liskov__ explains that the behaviour of an object is defined by either its parent class or the parent class above. The Liskov principle is violated when a child class modifies the behaviour or contract of the base class it overrides.
++ __Interfaces__ should never force the user to implement methods which it never needs. Interfaces should be divided into smaller, more cohesive interfaces, overall segregating the unrelated methods.
++ __Dependency Inversion__: methods should not have to create objects, instead, new objects should be created externally and passed to them. Instead of `method(){... new Object …}` use `method(Object object){…}`. The responsibility of injecting dependencies (that is, data required for functionality) is inverted, and given to other objects and methods.
 
-### Markdown
+For future reference, all `main()` functions are defined in a `Client` class, where each design pattern can be executed. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Creational Design Patterns #
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jfspps/JavaDesignPatterns/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
++ [The Builder Pattern](/docs/BuilderPattern.md)
++ [The Simple Factory Pattern](/docs/SimpleFactoryPattern.md)
++ [The Factory Method Pattern](/docs/FactoryMethodPattern.md)
++ [The Prototype Pattern](/docs/PrototypePattern.md)
++ [The Abstract Factory Pattern](/docs/AbstractFactoryPattern.md)
++ [The Singleton Pattern](/docs/SingletonPattern.md)
